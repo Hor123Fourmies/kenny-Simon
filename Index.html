@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kenny sous les bombes</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="logo">
+    <h1 class="sp-kenny-txt">Kenny sous les bombes</h1>
+</div>
+
+<div id="viewport">
+
+    <!--Retirer style-->
+    <div id="kenny" style="top:200px; left:50px"></div>
+    <div id="kenny-timer">0:00:00</div>
+
+    <!--screen-->
+    <div class="screen screen-default toggle" id="kenny-start-game">
+        <span id="btn-start-game" class="btn">Jouer</span>
+    </div>
+
+    <div class="screen" id="kenny-leaderboard-screen">
+        <ol>
+            <li><span>Chargement...</span></li>
+        </ol>
+</div>
+
+    <div class="screen screen-default" id="kenny-setscore-screen">
+        <div>
+            <h2>Ho non! Les bombes ont tué Kenny.</h2>
+            <span>Kenny a survécu</span><span id="kenny-score-survived"></span>
+            <p>
+
+                <label>Entre ton nom:</label>
+            <input type="texte" id="player-name" value="" maxlength="9" autofocus>
+            </p>
+
+            <div id="input-display-player-name">
+            </div>
+            <span id="btn-score-send" class="btn">Envoyer</span>
+            <span id="btn-replay" class="btn">Rejouer</span>
+</div>
+    </div>
+</div>
+    <div class="controls">
+        <span id="btn-leaderboard" class="btn">Classement</span>
+    </div>
+
+    <script src="script.js"></script>
+</div>
+
+</body>
+</html>
